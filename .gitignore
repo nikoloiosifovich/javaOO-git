@@ -25,7 +25,7 @@ hs_err_pid*
 # Created by https://www.gitignore.io/api/eclipse
 # Edit at https://www.gitignore.io/?templates=eclipse
 
-### Eclipse ###
+## Eclipse ###
 .metadata
 bin/
 tmp/
