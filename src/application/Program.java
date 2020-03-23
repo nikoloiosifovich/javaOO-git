@@ -42,7 +42,7 @@ public class Program {
 		int numItems = sc.nextInt();
 		
 		for ( int i=0; i<numItems; i++ ) {
-			System.out.println( "Enter #"+ (i+1) +"item data:" );
+			System.out.println( "Enter #"+ (i+1) +" item data:" );
 			System.out.print( "Product name: " );
 			String productName = sc.next();
 			System.out.print( "Product price: " );
