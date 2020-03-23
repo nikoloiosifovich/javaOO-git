@@ -63,4 +63,22 @@ public class Order {
 		
 		return sum;
 	}
+
+	@Override
+	public String toString() {
+		
+		StringBuilder sb = new StringBuilder();
+		sb.append( "ORDER SUMMARY:\n" );
+		sb.append( "Order moment: "+ moment +"\n" );
+		sb.append( "Order status: "+ status +"\n" );
+		sb.append( "Client: "+ client.getName() +" ("+ client.getBirthDate() +") - "+ client.getEmail() +"\n" );
+		sb.append( "Order items\n");
+		items.forEach( e -> sb.append(
+				e.getProduct().getName() +", $"+ e.getProduct().getPrice() +", Quantity"+ e.getQuantity() +", Subtotal: $"+ e.subTotal() +"\n"
+		));
+		sb.append( "\nTotal price: $"+ this.total() );
+		
+		return sb.toString();
+	}
+	
 }
