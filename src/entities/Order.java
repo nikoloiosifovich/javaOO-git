@@ -16,10 +16,9 @@ public class Order {
 	public Order() {
 	}
 
-	public Order( Date moment, OrderStatus status, List<OrderItem> items ) {
+	public Order( Date moment, OrderStatus status ) {
 		this.moment = moment;
 		this.status = status;
-		this.items = items;
 	}
 
 	public Date getMoment() {
